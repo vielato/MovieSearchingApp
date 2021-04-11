@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <title>MovieSearch</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <h1>SEARCH<span>MOVIE</span></h1>
+            <nav>
+                <ul>
+                    <li><a onclick="callSendMovie()" id="addBookmark">Add +</a></li>
+                    <li><a onclick="GoToIMDB()" target="_blank" id="movieSite">View IMDB</a></li>
+                    <li><a href="/movies" id="movieSearch">Go Back To Search</a></li>
+                    <li><a href="/" id="logout">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="movie">
+                <!--movie data are going to be loaded automatically here from main.js-->
+            </div>
+        </main>
+
+        <script src="/javascript/main.js"></script>
+        <script>
+            getMovie(); <!--fill div #movie-->
+
+            var pathname = window.location.pathname;
+            var board = pathname.split("/");
+            var f= board[2];
+            function callSendMovie(){
+                sendMovie(f);
+            }
+            function GoToIMDB(){
+                window.open('http://imdb.com/title/'+ f,'_blank');
+            }
+        </script>
+ </body>
+</html>

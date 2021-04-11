@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-in</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="signin">
+
+            <header>
+                <h1>SEARCH<span>MOVIE</span></h1>
+            </header>
+
+            <main>
+                <h2 style="color:white">Do you already have an account?</h2>
+                <p style="color:white">Fill the form bellow...</p><br>
+
+                <form action="/signUser" method="get">
+                    <table id="signin-menu">
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td><input type="email" name="email" id="email" placeholder="example@gmail.gr"></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td><input type="password" name="password" id="password" placeholder="****"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <br><br>
+                <h3 style="color:white">Don't you have an account yet?</h3><br><br>
+                <p><button value="click" ><a href="/user">sign-up</a></button></p>
+            </main>
+        </div>
+    </body>
+</html>

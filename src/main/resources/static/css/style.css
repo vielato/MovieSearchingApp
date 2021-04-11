@@ -1,0 +1,309 @@
+/*setting  default values of padding and margin in all html files*/
+* {
+    padding: 0;
+    margin: 0;
+}
+/*END setting  default values of padding and margin in all html files*/
+
+
+/*styling specific common tags in all html files*/
+body {
+    background-color: black;
+    color: azure;
+    text-align: center;
+    margin: 5%;
+    padding: 10%;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: azure;
+}
+
+    /*styling navigation bar*/
+    header {
+        width: 100%;
+        height: 70px;
+        background-color: #282828;
+    }
+
+    header h1 {
+        position: absolute;
+        padding: 3px;
+        float: left;
+        margin-left: 2%;
+        margin-top: 8px;
+        font-family: 'Alfa Slab One', cursive;
+        color: darkslategray;
+    }
+
+    header span {
+        color: azure;
+    }
+
+    header nav ul {
+        width: auto;
+        float: right;
+        margin-top: 8px;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 15px 30px;
+    }
+
+    header a {
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+
+    header a:hover {
+        color: darkslategray;
+        transition: 0.5s;
+    }
+    /*END styling navigation bar*/
+/*END styling specific common tags in all html files*/
+
+
+/*styling home.html*/
+.home table {
+    border-spacing: 20px;
+    margin-right: 15%;
+    margin-left: 35%;
+    margin-top: 15%;
+    font-size: 25px
+}
+
+.home button {
+    display: inline-block;
+    border-radius: 50%;
+    color: azure;
+    padding: 10px 15px;
+}
+
+.home #home-sign-up #sign-up-button {
+    background-color: slategrey;
+}
+
+.home #home-sign-in #sign-in-button {
+    background-color: darkcyan;
+}
+
+/*END styling home.html*/
+
+
+/*styling signup.html*/
+.signup form {
+    padding-left: 35%;
+    padding-right: 10%;
+    font-size: 140%
+}
+
+.signup-menu #signup-form {
+    border: 2px azure;
+    background-color: darkslategray;
+}
+
+.signup table {
+    background-color: darkslategray;
+    height: 110%
+}
+
+.signup table label {
+    font-size: 90%
+}
+
+.signup p,.signup h2 {
+    color: azure;
+}
+
+.signup h2 {
+    margin-top: 10%;
+}
+
+.signup  button {
+    background-color: darkslategray;
+    border-radius: 40%; /*round the corners*/
+    padding: 9px 14px;
+}
+/*END styling signup.html*/
+
+
+/*styling signin.html*/
+.signin form {
+    padding-left: 35%;
+    padding-right: 10%;
+    font-size: 140%
+}
+
+.signin-menu #signin-form {
+    border: 2px azure;
+    background-color: darkslategray;
+}
+
+.signin table {
+    background-color: darkslategray;
+    height: 110%
+}
+
+.signin table label {
+    font-size: 90%
+}
+
+ .signin p,.signin h2 {
+    color: azure;
+}
+
+.signin h2 {
+    margin-top:10%;
+}
+
+.signin button {
+    background-color: darkslategray;
+    border-radius: 40%; /*round the corners*/
+    padding: 9px 14px;
+}
+/*END styling signin.html*/
+
+
+/*styling index.html*/
+img {
+    max-width: 80%;
+    margin-top:10%;
+    margin-bottom: 30%
+
+}
+
+.jumbotron { /*the class containing the search bar*/
+    background-color: darkslategray;
+    font-size:25px;
+    text-align: center;
+    width:100%;
+    display: inline-block;
+}
+
+.jumbotron input[type=text] {  /*the field of search input ?????allaxh xrwmatos pos??????*/
+
+    font-size: 25px;
+    width: 60%;
+    padding: 12px 17px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.bookmark-button {
+    margin: 15px 30px;/*(right/left)   (top/bottom)*/
+}
+
+ .details-button  {
+    margin-bottom: 90px;
+ }
+
+.bookmark-button, .details-button  {
+    box-shadow: 0 2px 10px 0 #15f4ee inset,0 2px 10px 0 #15f4ee,
+    0 2px 10px 0 #15f4ee inset,0 2px 10px 0 #15f4ee;
+    text-shadow: 0 0 2px #15f4ee, 0 0 2px #15f4ee;
+    letter-spacing: 2px;
+    border: 2px solid #15f4ee;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.container {  /*the container of all movies displayed*/
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 20px;
+    justify-items: center;
+    margin-bottom: 20%;
+    padding-bottom: 20%;
+}
+
+.container-box {
+    margin-bottom: 20%;
+    padding-bottom: 20%;
+}
+
+.container .container-box #plot{
+    font-size:20px;
+    letter-spacing: 2px;
+}
+
+#movies  img { /*each poster returned after searching */
+    max-width: 170%;
+    min-width:80%;
+    height: 70%;
+    padding: 2px;
+    border: 1px solid ;
+    border-radius: 4px;
+    margin-top:20%;
+    margin-bottom: 15%
+}
+
+.container-box h2 { /*the title of each movie*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #860707
+}
+/*END styling index.html*/
+
+
+/*styling movies.html*/
+.exit {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+    align-items: stretch;
+    margin: 2%;
+    font-size: 25px;
+    border: 3px solid #860707;
+    padding: 0 3%;
+}
+
+
+.poster img { /*containing the image of each movie*/
+
+    width: 30%;
+    margin-top: 10px;
+}
+
+.movie_data1 h1 {  /*containing the title of each movie*/
+    color: #860707;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+    margin: 5%;
+}
+
+.movie_data1 .list-group  {  /*unordered list containing some of the selected movie's meta data*/
+    list-style-type: none;
+
+}
+
+.movie_data1 .list-group .list-group-item { /*the elements of the unordered list containing  meta data*/
+    margin: 2%;
+    font-size: 30px;
+
+}
+
+.movie_data1 .list-group .list-group-item strong, .movie_data2 h2 { /*.movie_data2 h2=each movie's long plot*/
+    color: #860707;
+}
+
+.movie_data2 h2 { /*containing information about the plot*/
+    font-size: 37px;
+    font-weight: bold;
+    background-color: burlywood;
+    margin: 5%;
+}
+
+.movie_data2 p {
+    display: inline-block;
+    margin: 0;
+    font-size: 30px;
+}
+/*END styling movies.html*/

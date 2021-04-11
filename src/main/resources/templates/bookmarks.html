@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en", xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>SEARCH<span>MOVIE</span></h1>
+            <ul>
+                <li><a href="/" id="logout">Log out</a></li>
+                <li><a href="/movies" id="movieSearch">Go Back To Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="bookmarks" class="container">
+
+        </div>
+    </main>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+
+    </script>
+    <script src="/javascript/main.js"></script>
+
+    <!--get the bookmarkList from model-->
+    <script th:inline="javascript">
+           /*<![CDATA[*/
+           var bookmarkList=/*[[${bookmarkList}]]*/ "Test1";
+           /*]]>*/
+    </script>
+
+    <script src="/javascript/bookmarks.js"></script>
+
+    <!--display the bookmarks consisting the bookmarkList retrieved above-->
+    <script>for(i=0; i<bookmarkList.length; i++)
+           getBookmarks(bookmarkList[i].movieId);
+    </script>
+</body>
+</html>
